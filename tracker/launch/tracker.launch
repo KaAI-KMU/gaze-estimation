@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="pupil_core" pkg="tracker" type="pupil_listener.py" />
+  <node name="pupil_LPF" pkg="tracker" type="pupil_LPF.py" />
+  <node name="tracker" pkg="tracker" type="track_total.py" output="screen" />
+  <node name="head_listener" pkg="tracker" type="head_listener.py" />
+</launch>
